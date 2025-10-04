@@ -21,7 +21,3 @@ This project contains two different NFT contracts built with **OpenZeppelin's ER
 ### stable-coin
 This project is an exogenous, decentralized, and crypto-collateralized stablecoin system. It consists of three main contracts: `DSCEngine.sol`, which is the core logic for minting, redeeming, and liquidating collateral; `DecentralizedStableCoin.sol`, which is the **ERC20** token itself; and the `OracleLib.sol` library, which ensures that prices from Chainlink are not stale before being used in calculations. The system is designed to be over-collateralized and pegged to the US Dollar.
 
----
-
-### ccip-rebase-token (in progress)
-This project is an in-progress implementation of a cross-chain rebase token and a corresponding vault. The `RebaseToken.sol` contract is an **ERC20** token that incentivizes users to deposit funds by automatically accruing interest based on a global rate. It also includes **OpenZeppelin's** `AccessControl` and `Ownable` contracts to manage permissions. The accompanying `Vault.sol` contract allows users to deposit ETH, which is then minted as Rebase Tokens, and redeem their tokens to get their ETH back with the accrued interest.
